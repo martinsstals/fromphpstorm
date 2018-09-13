@@ -4,6 +4,9 @@ function numberInWords(number) {
     if(number >=1 || number <= 10){
         ret = ones[parseInt(number)-1];
     }
+    if(parseInt(number)===11){
+        ret = "eleven";
+    }
     return ret;
 }
 
